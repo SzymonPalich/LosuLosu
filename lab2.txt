@@ -1,0 +1,6 @@
+mkdir LAB02
+cd LAB02
+git init
+touch README.txt
+git add README.txt
+git commit -m 'Dodano plik readme'
