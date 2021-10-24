@@ -1,7 +1,10 @@
 __pycache__/
 .idea/
-.build/
-.dist/
-.venv/
+build/
+dist/
+venv/
 
 MagicznyProgramDoLosowania.spec
+
+
+

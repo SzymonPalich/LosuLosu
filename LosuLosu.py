@@ -59,7 +59,7 @@ def validate():
         return False
 
     if len(get_persons()) < 2:
-        area.config(text="Min 2", fg="red")
+        area.config(text="Input more values", fg="red")
         return False
 
     return True
@@ -85,7 +85,7 @@ def draw(time, persons):
         area.config(text=persons[random.randint(0, len(persons) - 1)],
                     highlightbackground="#04240b", bg="#9ffa43", fg="#420057")
         submit["state"] = "normal"
-        submit["text"] = "Losu Losu"
+        submit["text"] = "Start!"
 
 
 if __name__ == '__main__':
@@ -128,7 +128,7 @@ if __name__ == '__main__':
     ent_time.insert(tk.END, '5')
     ent_time.grid(row=6, column=2, columnspan=4, pady=5, padx=(8, 0))
 
-    submit = tk.Button(root, text='Losu Losu', width=15, height=2, command=lambda: losu())
+    submit = tk.Button(root, text='Start!', width=15, height=2, command=lambda: losu())
     submit.grid(row=7, column=1, columnspan=4, pady=5, padx=(8, 0))
 
     root.mainloop()
